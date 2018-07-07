@@ -27,4 +27,5 @@ not running > inactive > active > inactive background > suspended > not running
 - applicationDidEnterBackground(_:) : 앱이 백그라운드 상태에 진입했을때 호출
 - applicationWillTerminate(_:) : 앱이 종료되기 직전에 호출되는 메소드
 
-
+## 코코아 터치 프레임워크
+- ios에 코코아 터치가 내장되어 있고 코코아 터치 프레임워크를 통해 해당 기능을 사용하도록 구현 한다.
