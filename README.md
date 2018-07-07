@@ -18,3 +18,13 @@ xcode를 이용해 swift single view application 프로젝트를 생성하면 Ap
   
 ## 버튼 눌러 인사하기
 - 라이브러리 영역에서 라벨과 버튼 객체를 드래그하여 뷰 컨트롤러에 추가하고 추가된 객체들을 editor에 드래그 하면 해당 view 개체에 대한 소스 연결 작업이 완료 된다. 매우 명시적이다. 드래그 하며 자동 생성되는 소스 코드에 대한 확인은 필요하다. 보통 인스펙터 창의 Connections Inspector 탭을 열면 드래그하여 발생된 연결 관계등을 알수 있다.
+
+## 라이프 사이클
+not running > inactive > active > inactive background > suspended > not running
+- application(_:willFinishLaunchingWithOptions:) : 앱이 구동되어 필요한 초기 실행 과정이 완료되기 직전에 호출되는 메소드
+- application(_:didFinishLaunchingWithOptions:) : 앱이 사용자에게 화면으로 표기되기 직전에 호툴되는 메소드.
+- applicationDidBecomeActive(_:) : 실행된 앱이 포그라운드 즉 화면 전면에 표시될때 호출되는 메소드 입니다. inactive상태에서 active로
+- applicationDidEnterBackground(_:) : 앱이 백그라운드 상태에 진입했을때 호출
+- applicationWillTerminate(_:) : 앱이 종료되기 직전에 호출되는 메소드
+
+
